@@ -19,6 +19,12 @@ public class Unit : NetworkBehaviour
     [SerializeField] private Targeter targeter = null;
     [SerializeField] private UnitsMovement unitMovement = null;
     [SerializeField] private Health health = null;
+    [SerializeField] private int resourceCost = 10;
+
+    public int GetResourceCost()
+    {
+        return resourceCost;
+    }
 
 
     public UnitsMovement GetUnitMovement()

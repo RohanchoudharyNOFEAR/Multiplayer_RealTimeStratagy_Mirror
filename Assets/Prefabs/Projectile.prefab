@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 437901454100920675}
   - component: {fileID: 3777324130316919489}
   - component: {fileID: 3946000031714712777}
+  - component: {fileID: 4745794465254917078}
   m_Layer: 7
   m_Name: Projectile
   m_TagString: Untagged
@@ -152,3 +153,20 @@ MonoBehaviour:
   destroyAfterSeconds: 5
   launchForce: 10
   damageToDeal: 20
+--- !u!114 &4745794465254917078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198617793890089409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c73093cc6c8d24daa4258e25cf7e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  colorRenderers:
+  - {fileID: 5377899548894209096}
