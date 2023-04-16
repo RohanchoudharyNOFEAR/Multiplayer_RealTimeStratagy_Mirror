@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5785009312329250372}
   - component: {fileID: 5785009312329250378}
   - component: {fileID: 5785009312329250374}
-  - component: {fileID: 5785009312329250379}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -52,7 +51,7 @@ MonoBehaviour:
   autoConnectClientBuild: 0
   sendRate: 30
   offlineScene: Assets/Scenes/Menu_Scene.unity
-  onlineScene: Assets/Scenes/Scene_Map_01.unity
+  onlineScene: 
   transport: {fileID: 5785009312329250374}
   networkAddress: localhost
   maxConnections: 100
@@ -62,12 +61,12 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 1
   spawnPrefabs:
-  - {fileID: 2791561453556750934, guid: cfa465f296d35464e96fea533f10f4fc, type: 3}
   - {fileID: 3289013671669131249, guid: d8bd235cb2636a7439ca71833e5c92e6, type: 3}
-  - {fileID: 7198617793890089409, guid: 2834e2ff7bb0c434cb17de6b23324ef7, type: 3}
   - {fileID: 2414051177446492289, guid: 6ea8731acc2c5a74ca35c3b7eea6aaa2, type: 3}
-  - {fileID: 3289013671669131249, guid: 684d37477b65a494794041bb97fd82c1, type: 3}
   - {fileID: 3289013671669131249, guid: 56cbbee42fa2bda4aa7f19e73839b557, type: 3}
+  - {fileID: 6553093864548146956, guid: 3ae42034d3654854c817bf6e5f03f9e2, type: 3}
+  - {fileID: 5784005059505564279, guid: 4102a2a417fb25b49adebce253571a3b, type: 3}
+  - {fileID: 5960304560478730570, guid: b59b520ab81f49049ba5322c7b050592, type: 3}
   snapshotSettings:
     bufferTimeMultiplier: 2
     catchupNegativeThreshold: -1
@@ -79,7 +78,7 @@ MonoBehaviour:
     dynamicAdjustmentTolerance: 1
     deliveryTimeEmaDuration: 2
   timeInterpolationGui: 0
-  unitSpawnerPrefab: {fileID: 3289013671669131249, guid: d8bd235cb2636a7439ca71833e5c92e6,
+  unitBasePrefab: {fileID: 3289013671669131249, guid: d8bd235cb2636a7439ca71833e5c92e6,
     type: 3}
   gameOverHandlerPrefab: {fileID: 5515010556435305569, guid: 6ea8731acc2c5a74ca35c3b7eea6aaa2,
     type: 3}
@@ -107,17 +106,3 @@ MonoBehaviour:
   clientMaxReceivesPerTick: 1000
   clientSendQueueLimit: 10000
   clientReceiveQueueLimit: 10000
---- !u!114 &5785009312329250379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5785009312329250368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0

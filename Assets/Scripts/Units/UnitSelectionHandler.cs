@@ -20,6 +20,7 @@ public class UnitSelectionHandler : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
         Unit.AuthorityOnUnitDespawned += AuthorityHandleUnitDespawned;
         GameOverHandler.ClientOnGameOver += ClientHandleGameOver;
     }
@@ -33,10 +34,7 @@ public class UnitSelectionHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player == null)
-        {
-            player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
-        }
+       
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
